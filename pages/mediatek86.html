@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Btn flottant gauche petit menu -->
+
+    <div class="btn-rond-menu">
+        <div class="cont-ligne">
+            <div class="ligne-unique"></div>
+        </div>
+    </div>
+
+    <!-- Navigation verticale -->
+
+    <nav class="nav-gauche">
+
+        <div class="blocs-menu">
+            <div class="cercle-portrait">
+                <img src="../ressources/fench.png" alt="portrait img">
+            </div>
+        </div>
+
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="../index.html">
+                    Accueil
+                </a>
+            </span>
+        </div>
+
+    </nav>
+
+
+
+    <section class="portfolio" id="port">
+        <h2 class="titre-port"><strong>Atelier 2 MediaTek86</strong></h2>
+            <div class="projets-img">
+                <a href="https://github.com/r4ndomfriday/atelierPro2" target="_blank"><img src="../ressources/infotech_01.jpg" alt="img portfolio"></a>
+        </div>
+        <div class="projets">
+            <p>Le programme est une interface graphique permettant d'interagir sur une base de données.</p>
+            </br>
+            <p>Il a été développé en C# sous Visual Studio 2019 et avec MySQL en SGBD.</p>
+            </br>
+            <p>C'est une application de bureau qui va permettre de gérer le personnel de médiathèques, leur affectation à un service et leurs absences.</p>
+            </br>
+            <p>Ci-dessous une présentation vidéos de ses fonctionnalités.</p>
+        </div>
+        <div class="projets-img">
+            <p><iframe width="800" height="600" src="https://www.youtube.com/embed/xt2KhAuzJQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p> 
+        </div>
+
+        <div class="projets">
+            <p>Pour Utiliser le programme : </p>
+            </br>
+            <p>Login : patrick </p>
+            </br>
+            <p>Pwd : plop@bts </p>
+            </br>
+            <p>Pour fonctionner, un SGBD MySQL doit etre installé sur la même machine que le programme </p>
+            </br>
+            <p>Avec le script de configuration proposé si dessous</p>
+            </br>
+        </div>
+    
+
+
+        <h2 class="titre-port">Les liens</h2>
+    
+    
+            <div class="projets-img">
+                <div class="item vague1">
+                    <div class="cont-img-port">
+                        <img src="../ressources/pdf.png" alt="img portfolio">
+                    </div>
+                    <h3>Compte rendu</h3>
+                    <p>Descriptif des etapes de la conception</p>
+                    <a href="https://github.com/r4ndomfriday/atelierPro2/blob/main/etape6/Compte%20rendu.pdf" class="btn-projets" target="_blank">Lien du document</a>
+                </div>
+        
+        
+                <div class="item vague1">
+                    <div class="cont-img-port">
+                        <img src="../ressources/github.png" alt="img portfolio">
+                    </div>
+                    <h3>Repos github</h3>
+                    <p>L'intégralité du projet Atelier 2 MediaTek86 </p>
+                    <a href="https://github.com/r4ndomfriday/atelierPro2" class="btn-projets" target="_blank">Lien du repos</a>
+                </div>
+        
+                <div class="item vague3">
+                    <div class="cont-img-port">
+                        <img src="../ressources/rds-mysql.png" alt="img portfolio">
+                    </div>
+                    <h3>Bdd du projet</h3>
+                    <p>Sauvegarde de la base de données</p>
+                    <a href="https://github.com/r4ndomfriday/atelierPro2/blob/main/etape4/ap2.sql" class="btn-projets" target="_blank">Lien de la bdd</a>
+                </div>
+            </div>
+
+        <div class="projets-img">
+            <div class="item vague3">
+                <div class="cont-img-port">
+                    <img src="../ressources/chm.png" alt="img portfolio">
+                </div>
+                <h3>Documentation</h3>
+                <p>des classes et des méthodes public </p>
+                <a href="../pages/mediatek86_doc/index.html" class="btn-projets" target="_blank">Lien du document</a>
+            </div>
+
+            <div class="item vague3">
+                <div class="cont-img-port">
+                    <img src="../ressources/kaban.png" alt="img portfolio">
+                </div>
+                <h3>Kanban</h3>
+                <p>Temporalité du projet</p>
+                <a href="https://github.com/users/r4ndomfriday/projects/1" class="btn-projets" target="_blank">Découvrez le kanban</a>
+            </div>
+
+            <div class="item vague3">
+                <div class="cont-img-port">
+                    <img src="../ressources/application.png" alt="img portfolio">
+                </div>
+                <h3>Installeur </h3>
+                <p>Pour installer l'application</p>
+                <a href="https://github.com/r4ndomfriday/atelierPro2/raw/main/etape6/mediatek86.msi" class="btn-projets" target="_blank">Lien </a>
+            </div>
+        </div>
+    
+           
+
+    
+    
+    </section>
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>
