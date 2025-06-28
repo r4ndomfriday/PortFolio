@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Btn flottant gauche petit menu -->
+
+    <div class="btn-rond-menu">
+        <div class="cont-ligne">
+            <div class="ligne-unique"></div>
+        </div>
+    </div>
+
+    <!-- Navigation verticale -->
+
+    <nav class="nav-gauche">
+
+        <div class="blocs-menu">
+            <div class="cercle-portrait">
+                <img src="../ressources/fench.png" alt="portrait img">
+            </div>
+        </div>
+
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="../index.html">
+                    Accueil
+                </a>
+            </span>
+        </div>
+
+    </nav>
+
+
+
+    <section class="portfolio" id="port">
+        <div class="projets-img">
+            <a href="https://github.com/Gotlub/Simulation-du-d-ner-des-philosophes" target="_blank"><img src="../ressources/philo.png" style="max-width: 500px; max-height: 480px;"  alt="img portfolio"></a>
+        </div>
+        <div class="projets">
+            <strong>Projet NSY103 – Simulation du dîner des philosophes (C / Réseaux / Synchronisation)</strong>
+            <br/>
+            <p>Ce projet implémente une solution au problème du dîner des philosophes proposé par Dijkstra, servant à illustrer les phénomènes d'interblocage et de gestion de ressources partagées en programmation concurrente.</p>
+            </br>
+        
+            </br>
+        </div>
+
+
+        <h2 class="titre-port">Les liens</h2>
+    
+    
+        <div class="projets-img">
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="../ressources/pdf2.avif" alt="img portfolio">
+                </div>
+                <h3>Compte rendu</h3>
+                <p>Descriptif du projet</p>
+                <a href="../ressources/Projet.pdf" class="btn-projets" target="_blank">Lien du document</a>
+            </div>
+    
+    
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="../ressources/github.png" alt="img portfolio">
+                </div>
+                <h3>Repos github</h3>
+                <p>L'intégralité du projet MediaTek Formation</p>
+                <a href="https://github.com/Gotlub/Simulation-du-d-ner-des-philosophes" class="btn-projets" target="_blank">Lien du repos</a>
+            </div>
+        </div>
+
+        <div class="projets-img">
+            <img src="../ressources/philo2.png" style="max-width: 500px; max-height: 515px;"  alt="img portfolio">
+        </div>
+
+        <div class="projets">
+            <ul>
+                <li>
+                    ⚙️ Objectifs :
+                    <br>
+                    <p>
+                        - Éviter les blocages (deadlocks) via une stratégie de prévention utilisant des sémaphores
+                    </p>
+                    <p>
+                        - Implémenter un système client-serveur basé sur des sockets UDP.
+                    </p>
+                    <p>
+                        - Assurer la communication concurrente entre plusieurs processus.
+                    </p>
+                </li>
+                <li>
+                    🧩 Architecture du projet :
+                    <br>
+                    <p>
+                        - Client : représente les philosophes. Chaque philosophe est un processus fils du client principal. Ils communiquent via UDP avec le serveur.
+                    </p>
+                    <p>
+                        - Serveur : coordonne l'accès aux fourchettes à l’aide de sémaphores (structure IPC). Chaque requête est traitée par un processus fils pour optimiser la réactivité.
+                    </p>
+                </li>
+                <li>
+                   🔐 Synchronisation & Stratégie :
+                    <br>
+                    <p>
+                        - Utilisation de sémaphores POSIX et opérations de type P avec le flag IPC_NOWAIT.
+                    </p>
+                    <p>
+                        - Si un philosophe ne peut obtenir les deux fourchettes immédiatement, il relâche celle obtenue et réessaye plus tard.
+                    </p>
+                    <p>
+                        - Une priorité dans l’ordre d’allocation (plus jeune philosophe ou le père) est utilisée pour réduire les risques de famine ou de deadlock.
+                    </p>
+                </li>
+                <li>
+                    💻 Technologies utilisées 
+                    <br>
+                    <p>
+                        - Langage : C
+                    </p>
+                    <p>
+                        - Bibliothèques : sys/socket.h, sys/sem.h, sys/shm.h, errno.h
+                    </p>
+                    <p>
+                        - Communication : UDP
+                    </p>
+                    <p>
+                        - Environnement : Systèmes compatibles POSIX (Linux)
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <strong>🚀 Compilation & Exécution : </strong>
+            <p>
+               - gcc -Wall -Werror -Wextra udpServer.c -o serv
+            </p>
+             <p>
+               - gcc -Wall -Werror -Wextra udpClient.c -o client
+            </p>
+        </div>
+
+    
+    
+    </section>
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>
