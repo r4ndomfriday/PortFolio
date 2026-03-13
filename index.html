@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <!-- Btn flottant gauche petit menu -->
 
-    <div class="btn-rond-menu">
-        <div class="cont-ligne">
-            <div class="ligne-unique"></div>
-        </div>
-    </div>
-
-    <!-- Navigation verticale -->
-
-    <nav class="nav-gauche">
-
-        <div class="blocs-menu">
-            <div class="cercle-portrait">
-                <img src="ressources/fench.png" alt="portrait img">
-            </div>
-        </div>
-
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#accueil">
-                    Accueil
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#pres">
-                    Présentation
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#port">
-                    Portfolio
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#range">
-                    Stages
-                </a>
-            </span>
-        </div>
-
-
-
-    </nav>
+    <script src="./components/menu.js" data-path="." data-is-index="true"></script>
 
     <!-- Section Accueil -->
 
     <section class="accueil" id="accueil">
-        <h2>Bienvenue sur mon portfolio</h1>
+        <h1>Bienvenue sur mon portfolio</h1>
         <p class="txt-animation">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <a href="#port" class="btn-acc btn-acc1">Projets</a>
         <a href="#range" class="btn-acc btn-acc2">Stages</a>
@@ -84,186 +37,172 @@
                     <img src="ressources/codingame.png" alt="codingame icone" class="icone-medias">
                 </div>
             </a>
-            
+
             <a href="#port">
                 <div class="btn-rond">
-                    <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc" >
+                    <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
                 </div>
             </a>
         </div>
     </section>
 
-<!-- Section Présentation -->
+    <!-- Section Présentation -->
 
-<section class="presentation" id="pres">
+    <section class="presentation" id="pres">
 
-    <h2 class="titre-pres">A propos</h2>
+        <h2 class="titre-pres">À propos</h2>
 
-    <div class="container-presentation">
+        <div class="container-presentation">
 
-        <div class="fond-forme"></div>
+            <div class="fond-forme"></div>
 
-        <div class="pres-gauche">
-            <h2>Étudiant en 3<sup>e</sup> année de Licence Professionnelle – Parcours Chef de Projet : Développement, Sécurité et Exploitation</h2>
-            <hr>
-            <p>Passionné par l’informatique, j’ai commencé à programmer par curiosité en décembre 2021. Très vite, j’ai su que je voulais en faire mon métier.</p>
-            <br>
-            <p>
-            Âgé de 39 ans et en reconversion professionnelle, je poursuis actuellement une Licence Professionnelle au CNAM, dans le but de devenir développeur et chef de projet technique.
-            </p>
+            <div class="pres-gauche">
+                <h2>Étudiant en 3<sup>e</sup> année de Licence Professionnelle – Parcours Chef de Projet :
+                    Développement, Sécurité et Exploitation</h2>
+                <hr>
+                <p>Passionné par l’informatique, j’ai commencé à programmer par curiosité en décembre 2021. Très vite,
+                    j’ai su que je voulais en faire mon métier.</p>
+                <br>
+                <p>
+                    Âgé de 39 ans et en reconversion professionnelle, je poursuis actuellement une Licence
+                    Professionnelle au CNAM, dans le but de devenir développeur et chef de projet technique.
+                </p>
+            </div>
+
         </div>
-        
 
         </div>
-        
+
+    </section>
+
+    <!-- Section Portfolio -->
+
+    <section class="portfolio" id="port">
+
+        <h2 class="titre-port">Mes projets</h2>
+
+        <div class="cont-portfolio">
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/projetAndroid.png" alt="img portfolio">
+                </div>
+                <h3>Application Android </h3>
+                <p>Suivi GPS entre utilisateurs</p>
+                <a href="pages/projetAndroid.html" class="btn-projets">Découvrez le projet</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/proposition.png" alt="img portfolio">
+                </div>
+                <h3>RDV-86</h3>
+                <p>Charte de projet et proposition</p>
+                <a href="pages/rdv86.html" class="btn-projets">Découvrez le projet</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/philo3.png" alt="img portfolio">
+                </div>
+                <h3>Projet NSY103 </h3>
+                <p>Simulation du dîner des philosophes</p>
+                <a href="pages/philo.html" class="btn-projets">Découvrez le projet</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/mediatekDocumentLogo.jpg" alt="img portfolio">
+                </div>
+                <h3>MediaTekDocuments</h3>
+                <p>Application graphique permettant d'interagir avec une base de données en C#</p>
+                <a href="pages/mediatekDocuments.html" class="btn-projets">Découvrez le projet</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/infotech_01.jpg" alt="img portfolio">
+                </div>
+                <h3>MediaTek Formation</h3>
+                <p>Catalogue de formations en Symfony</p>
+                <a href="pages/mediatekFormation.html" class="btn-projets">Découvrez le projet</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/mediatek86.png" alt="img portfolio">
+                </div>
+                <h3>Atelier 2 MediaTek86</h3>
+                <p>Application graphique permettant d'interagir avec une base de données en C#</p>
+                <a href="pages/atelier2.html" class="btn-projets">Découvrez le projet</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/tower.png" alt="img portfolio">
+                </div>
+                <h3>Skyscrapers puzzle resolver C</h3>
+                <p>Résolveur de grille Skyscrapers, réalisé en septembre 2022</p>
+                <a href="https://github.com/Gotlub/f4k3-p1sc1n3" class="btn-projets" target="_blank">Découvrez le
+                    projet</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/snake.png" alt="img portfolio">
+                </div>
+                <h3>Snake en Python</h3>
+                <p>Jeu en Python avec l'interface graphique Tkinter, réalisé en avril 2022</p>
+                <a href="https://github.com/Gotlub/snake-python" class="btn-projets" target="_blank">Découvrez le
+                    projet</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section Range -->
+
+    <section class="section-range" id="range">
+
+        <h2 class="titre-exp">Mes Stages</h2>
+
+        <div class="cont-portfolio">
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/canope2.jpeg" alt="img portfolio">
+                </div>
+                <h3>Réseau Canope</h3>
+                <p>Stage à la DSI de Canopé Chasseneuil-du-Poitou</p>
+                <a href="pages/canope.html" class="btn-projets">Découvrez le stage</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="ressources/laigle2.jpg" alt="img portfolio">
+                </div>
+                <h3>Pays de L'Aigle</h3>
+                <p>Stage à la DSI de la Communauté de communes des Pays de L'Aigle</p>
+                <a href="pages/laigle.html" class="btn-projets">Découvrez le stage</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Parallax -->
+
+    <div class="section-parallax">
+        <p class="txt-par">
+        </p>
     </div>
 
-</section>
+    <!-- Section Contact -->
 
-<!-- Section Portfolio -->
+    <footer>
+        Tous droits réservés &copy;
+    </footer>
 
-<section class="portfolio" id="port">
-
-
-    <h2 class="titre-port">Mes projets</h2>
-
-    <div class="cont-portfolio">
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/projetAndroid.png" alt="img portfolio">
-            </div>
-            <h3>Application Android </h3>
-            <p>Suivi GPS entre utilisateurs</p>
-            <a href="pages/projetAndroid.html" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/proposition.png" alt="img portfolio">
-            </div>
-            <h3>RDV-86</h3>
-            <p>Charte de projet et proposition</p>
-            <a href="pages/rdv86.html" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/philo3.png" alt="img portfolio">
-            </div>
-            <h3>Projet NSY103 </h3>
-            <p>Application graphique permetant d'intéragir avec une base de données en c#</p>
-            <a href="pages/philo.html" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/mediatekDocumentLogo.jpg" alt="img portfolio">
-            </div>
-            <h3>MediaTekDocuments</h3>
-            <p>Simulation du dîner des philosophes </p>
-            <a href="pages/mediatekDocuments.html" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/infotech_01.jpg" alt="img portfolio">
-            </div>
-            <h3>MediaTek Formation</h3>
-            <p>Catalogue de formations en Symfony</p>
-            <a href="pages/mediatekFormation.html" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/mediatek86.png" alt="img portfolio">
-            </div>
-            <h3>Atelier 2 MediaTek86</h3>
-            <p>Application graphique permetant d'intéragir avec une base de données en c#</p>
-            <a href="pages/atelier2.html" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/tower.png" alt="img portfolio">
-            </div>
-            <h3>Skyscrapers puzzle resolver C</h3>
-            <p>Resolveur de grille Skyscrapers, realisé en septembre 2022</p>
-            <a href="https://github.com/Gotlub/f4k3-p1sc1n3" class="btn-projets" target="_blank">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/snake.png" alt="img portfolio">
-            </div>
-            <h3>Snake python</h3>
-            <p>Jeux en python avec l'interface graphique Tkinter, realisé en avril 2022</p>
-            <a href="https://github.com/Gotlub/snake-python" class="btn-projets" target="_blank">Découvrez le projet</a>
-        </div>
-    </div>
-
-
-</section>
-
-<!-- Section Range -->
-
-<section class="section-range" id="range">
-
-    <h2 class="titre-exp">Mes Stages</h2>
-    
-    <div class="cont-portfolio">
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/canope2.jpeg" alt="img portfolio">
-            </div>
-            <h3>Réseau Canope</h3>
-            <p>Stage a la DSI de Canope Chasseneuil du Poitou</p>
-            <a href="pages/canope.html" class="btn-projets">Découvrez le stage</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/laigle2.jpg" alt="img portfolio">
-            </div>
-            <h3>Pays de L'Aigle</h3>
-            <p>Stage a la DSI de la Communauté de communes des Pays de L'Aigle</p>
-            <a href="pages/laigle.html" class="btn-projets">Découvrez le stage</a>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- Section Parallax -->
-
-<div class="section-parallax">
-    <p class="txt-par">
-    </p>
-</div>
-
-
-<!-- Section Contact -->
-
-
-<footer>
-    Tout Droits réservés &copy;
-</footer>
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="app.js"></script>
+    <script src="./components/scripts.js" data-path="."></script>
 </body>
+
 </html>

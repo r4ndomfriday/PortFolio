@@ -110,7 +110,7 @@ body {
         align-items: center;
         flex-direction: column;
 
-    } 
+    }
     .menu-visible {
         left: 0px!important;
     }
@@ -152,7 +152,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-    
+
     }
 
     .ligne-unique::before {
@@ -178,7 +178,7 @@ body {
         top: 0;
         transform: rotate(45deg);
         transition: top 300ms ease, transform 300ms 300ms ease;
-    } 
+    }
     .cont-ligne.active .ligne-unique {
         background: transparent;
     }
@@ -186,7 +186,7 @@ body {
         bottom: 0;
         transform: rotate(-45deg);
         transition: bottom 300ms ease, transform 300ms 300ms ease;
-    } 
+    }
 }
 
 /* ------------------ Accueil ---------------- */
@@ -275,7 +275,7 @@ h1 {
 @keyframes pulse {
     to {
         box-shadow: 0 0 0 8px rgba(255,255,255,0.01);
-    }   
+    }
 }
 .logo-btn-rond-acc {
     width: 35px;
@@ -538,7 +538,6 @@ h1 {
     }
 }
 
-
 @media screen and (max-width: 700px) {
 
     .container-presentation {
@@ -558,7 +557,6 @@ h1 {
     .txt-liste {
         font-size: 17px;
     }
-
 
 }
 
@@ -656,7 +654,6 @@ h1 {
     align-items: center;
 }
 
-
 /* Media portfolio */
 
 .projets-img {
@@ -672,7 +669,6 @@ h1 {
     padding: auto;
 
 }
-
 
 @media screen and (max-width: 1300px) {
 
@@ -695,8 +691,6 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-
-    
 
 }
 @media screen and (max-width: 500px) {
@@ -784,7 +778,6 @@ h1 {
 
 }
 
-
 @media screen and (max-width: 450px) {
 
     .section-range{
@@ -795,8 +788,6 @@ h1 {
         margin: 50px 0 60px 0;
     }
 }
-
-
 
 /* Section Parallax */
 .section-parallax {
@@ -826,7 +817,7 @@ h1 {
     .txt-par:nth-child(1) {
         padding-left: 0px;
     }
-    
+
 }
 @media screen and (max-width: 700px) {
 
@@ -848,8 +839,6 @@ h1 {
 }
 
 /* Section Contact */
-
-
 
 /* Animation Contact */
 

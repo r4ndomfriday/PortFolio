@@ -11,7 +11,7 @@ btnMenu.addEventListener('click', () => {
 })
 
 if(window.matchMedia('(max-width: 1300px)')) {
- 
+
     allItemNav.forEach(item => {
         item.addEventListener('click', () => {
             nav.classList.toggle('menu-visible')
@@ -76,10 +76,9 @@ const btn = document.querySelectorAll('.btn-acc')
 const btnMedias = document.querySelectorAll('.media')
 const btnRondAccueil = document.querySelector('.btn-rond')
 
-
 const TL1 = gsap.timeline({paused: true});
 
-TL1 
+TL1
 .to(navbar, {left: '0px', ease: Power3.easeOut, duration: 0.6})
 .from(titre, {y: -50, opacity: 0, ease: Power3.easeOut, duration: 0.4})
 .staggerFrom(btn, 1, {opacity: 0}, 0.2, '-=0.30')
@@ -136,8 +135,7 @@ const scene2 = new ScrollMagic.Scene({
 // .addIndicators()
 .addTo(controller)
 
-
-// Vague 2 
+// Vague 2
 
 const itemPortfolio2 = document.querySelectorAll('.vague2')
 
@@ -154,7 +152,6 @@ const scene3 = new ScrollMagic.Scene({
 .setTween(tlPortfolio2)
 // .addIndicators()
 .addTo(controller)
-
 
 // Vague 3
 
@@ -174,11 +171,3 @@ const scene4 = new ScrollMagic.Scene({
 // .addIndicators()
 .addTo(controller)
 
-
-
-const scene5 = new ScrollMagic.Scene({
-    triggerElement: sectionComp,
-    reverse: false
-})
-.setTween(tlCompetences)
-.addTo(controller);
