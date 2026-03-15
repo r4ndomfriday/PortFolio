@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - InfoTec86</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <script src="../components/menu.js" data-path=".." data-is-index="false"></script>
+
+    <section class="portfolio" id="port">
+        <div class="projets-img">
+            <img src="../ressources/proposition.png" style="max-width: 800px; max-height: 454px;" alt="img portfolio">
+        </div>
+
+        <div class="projets">
+            <p style="font-size: 1.3em; color:orange;"><strong>🏥 Projet InfoTec86</strong></p>
+            <p>Création de bout en bout d'un corpus documentaire de sécurité pour une entreprise fictive.</p>
+            <strong>🔍 Présentation générale</strong>
+            <br />
+            <p>Pour ce projet académique, j'ai créé de zéro la politique de sécurité (PSSI) et la procédure documentaire
+                d'une entreprise fictive, InfoTec86.</p>
+            <br />
+            <p>L'objectif était de prouver que je comprends l'envers du décor d'une infrastructure : avant de configurer
+                des serveurs, il faut définir des règles. Je me suis basé sur les standards ISO 27001 et 27002 pour
+                rédiger des documents réalistes traitant de la gestion des accès (RBAC) , du modèle Zero Trust , de la
+                sécurisation des mots de passe et du cycle de vie des employés (processus d'arrivée et de départ). C'est
+                moins visuel que du code, mais c'est le socle incontournable de toute infrastructure sécurisée.</p>
+            <br />
+        </div>
+
+        <h2 class="titre-port">Les liens</h2>
+
+        <div class="projets-img">
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="../ressources/infoTEC.png" alt="img portfolio">
+                </div>
+                <h3>Politique de Contrôle d'Accès Logique et Physique</h3>
+                <a href="../ressources/Politique de Sécurité des Systèmes d’Information (PSSI).pdf" class="btn-projets"
+                    target="_blank">Lien du document</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="../ressources/infoTEC.png" alt="img portfolio">
+                </div>
+                <h3>Procédure de Gestion Documentaire PSSI</h3>
+                <a href="../ressources/Procédure de gestion documentaire.pdf" class="btn-projets" target="_blank">Lien
+                    du document</a>
+            </div>
+        </div>
+
+        <div class="projets">
+            <strong>🧩 Compétences mobilisées</strong>
+            <ul>
+                <li>
+                    ✅ Gouvernance et Normes :
+                    <br>
+                    <p>
+                        - Création d'un cycle de vie documentaire complet (règles de rédaction, approbation, révision,
+                        archivage).
+                    </p>
+                    <p>
+                        - Mise en place d'une classification stricte de l'information (Interne, Restreint,
+                        Confidentiel).
+                    </p>
+                    <p>
+                        - Alignement sur les exigences des normes ISO/IEC 27001 et 27002.
+                    </p>
+                </li>
+                <li>
+                    ✅ Gestion des Identités et Accès (IAM) :
+                    <br>
+                    <p>
+                        - Définition d'un modèle d'accès basé sur les rôles (RBAC) et application du principe de moindre
+                        privilège.
+                    </p>
+                    <p>
+                        - Formalisation du processus JML (Joiner, Mover, Leaver) pour sécuriser les mouvements de
+                        personnel.
+                    </p>
+                </li>
+                <li>
+                    ✅ Sécurité Opérationnelle :
+                    <br>
+                    <p>
+                        - Cadrage technique des accès : obligation du MFA pour les accès distants et comptes sensibles.
+                    </p>
+                    <p>
+                        - Définition des règles pour les comptes à privilèges (PAM) et la ségrégation des réseaux.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script src="../components/scripts.js" data-path=".."></script>
+</body>
+
+</html>

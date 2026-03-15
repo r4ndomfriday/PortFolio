@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - PictoTree</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <script src="../components/menu.js" data-path=".." data-is-index="false"></script>
+
+    <section class="portfolio" id="port">
+        <div class="projets-img" style="padding: 0; background: transparent; box-shadow: none;">
+            <a href="https://pictotree.eu" target="_blank" style="display: block; width: 100%; text-align: center;">
+                <img src="../ressources/pictotree2.png" alt="PictoTree"
+                    onerror="this.onerror=null; this.src='../ressources/pictotree1.png';"
+                    style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+            </a>
+        </div>
+        <div class="projets">
+            <p style="font-size: 1.2em; color:orange;"><strong>🌳 PictoTree - Écosystème de Communication Alternative
+                    (CAA)</strong></p>
+            <br />
+            <p><strong>Résumé du Projet :</strong> PictoTree est une plateforme complète (Backend Web + Application
+                Mobile Native) conçue pour l'Aide à la Communication Alternative et Améliorée (CAA). L'objectif est de
+                permettre aux utilisateurs (aidants, orthophonistes, parents) de créer, gérer et afficher des "arbres"
+                de communication personnalisés à l'aide de pictogrammes (notamment via la banque open source ARASAAC ou
+                via des imports personnels).</p>
+            <br />
+            <p>Le système en cours de développement est actuellement hébergé en production et accessible sur <a
+                    href="https://pictotree.eu" target="_blank">pictotree.eu</a>.</p>
+        </div>
+
+        <div class="projets">
+            <p style="font-size: 1.2em; color:orange;"><strong>1. Le Backend Web & API (Python / Flask) ⚙️</strong></p>
+            <br />
+            <p>Application Flask / JS multifonction au cœur du projet. Elle permet à l'utilisateur d'importer des
+                pictogrammes, de construire des listes chaînées pour les imprimer, et de concevoir ses propres arbres de
+                communication qui pourront être synchronisés avec l'application Android.</p>
+            <ul>
+                <li><strong>API RESTful & Authentification :</strong> Développement d'une API mobile dédiée, sécurisée
+                    par jetons JWT, gérant l'authentification et les accès.</li>
+                <li><strong>Infrastructure & Déploiement :</strong> Actuellement hébergé sur un serveur cloud dédié
+                    (pictotree.eu), le projet a été pensé pour être entièrement conteneurisé avec Docker à court terme.
+                </li>
+                <li><strong>Gestion Avancée des Fichiers Utilisateurs :</strong> Le backend permet l'import dynamique
+                    d'images personnalisées. Chaque utilisateur dispose d'un espace de stockage cloud cloisonné (un
+                    dossier propre sur le serveur Linux) pour gérer ses ressources en toute sécurité.</li>
+                <li><strong>Génération de Documents :</strong> Export de fiches PDF à la volée intégrant les
+                    pictogrammes distants de l'utilisateur.</li>
+                <li><strong>Base de Données :</strong> Architecture relationnelle gérée avec SQLAlchemy et Flask-Migrate
+                    pour le versioning de la DB. Une migration vers MySQL est prévue pour accompagner le passage de
+                    l'application sur Docker.</li>
+            </ul>
+        </div>
+
+        <div class="projets">
+            <p style="font-size: 1.2em; color:orange;"><strong>2. L'Application Mobile Native (Android / Kotlin)
+                    📱</strong></p>
+            <br />
+            <p>Prolongement direct du backend, cette application permet aux utilisateurs de communiquer en sélectionnant
+                les arbres de pictogrammes organisés depuis le site web. Pensée pour être accessible et résiliente, elle
+                est compatible smartphone et tablette, propose une synthèse vocale (Text-to-Speech de Google) pour lire
+                les descriptions, et peut fonctionner entièrement en mode hors ligne après la première synchronisation
+                des arbres.</p>
+            <ul>
+                <li><strong>Architecture Stricte :</strong> Développée en suivant le pattern MVVM (Model-View-ViewModel)
+                    recommandé par Google. Séparation claire entre la logique métier, la gestion des données et
+                    l'interface utilisateur.</li>
+                <li><strong>Gestion Réactive des États :</strong> Utilisation de StateFlow et de classes scellées
+                    (sealed classes pour les UiState) afin de piloter proprement l'affichage de l'interface (Chargement,
+                    Succès, Erreur).</li>
+                <li><strong>Réseau & Mode Hors Ligne :</strong> Communication API sécurisée via Retrofit / OkHttp.
+                    Implémentation d'une base de données locale avec Room (via KSP) pour la persistance des profils et
+                    des arbres de communication, garantissant l'utilisation de l'application sans connexion internet.
+                </li>
+                <li><strong>Internationalisation & Accessibilité :</strong> Application 100 % multilingue via
+                    l'utilisation stricte des ressources texte (strings.xml) pour garantir la maintenabilité, couplée
+                    aux outils d'accessibilité vocale natifs.</li>
+                <li><strong>Mots-clés / Stack Technique :</strong> Python, Flask, SQLAlchemy, Kotlin, Android SDK, MVVM,
+                    Room, Retrofit, Coroutines/Flow, JWT, REST API, Docker (prévu), Hébergement Web.</li>
+            </ul>
+        </div>
+
+        <div class="projets">
+            <p style="font-size: 1.2em; color:orange;"><strong>3. Qualité Logicielle & Culture DevOps 🚀</strong></p>
+            <br />
+            <p>Pour garantir la stabilité de l'application en production et fluidifier le développement, une approche
+                DevOps moderne a été intégrée au cœur du projet :</p>
+            <ul>
+                <li><strong>Tests Automatisés :</strong> Mise en place d'une suite de tests (unitaires/intégration) sur
+                    le backend Flask (ex: validation des routes API, tests d'authentification) pour prévenir toute
+                    régression.</li>
+                <li><strong>Intégration et Déploiement Continus (CI/CD) :</strong> Automatisation du pipeline de
+                    livraison. Chaque mise à jour majeure du code passe par des étapes de validation automatisées avant
+                    d'être auto-déployée sur le serveur de production (pictotree.eu). L'architecture logicielle est
+                    également préparée pour une future conteneurisation intégrale sous Docker.</li>
+            </ul>
+        </div>
+
+        <h2 class="titre-port">Les liens</h2>
+        <div class="projets-img" style="flex-wrap: wrap;">
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="../ressources/github.png" alt="GitHub Repo">
+                </div>
+                <h3>Backend Web & API</h3>
+                <p>Lien vers le dépôt Pictogram-Tree Builder</p>
+                <a href="https://github.com/Gotlub/picto-three" class="btn-projets" target="_blank">Lien du dépôt</a>
+            </div>
+
+            <div class="item vague1">
+                <div class="cont-img-port">
+                    <img src="../ressources/github.png" alt="GitHub Repo">
+                </div>
+                <h3>Application Mobile</h3>
+                <p>Lien vers le dépôt PictotreeApp</p>
+                <a href="https://github.com/Gotlub/pictotreeApp" class="btn-projets" target="_blank">Lien du dépôt</a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="../components/scripts.js" data-path=".."></script>
+</body>
+
+</html>

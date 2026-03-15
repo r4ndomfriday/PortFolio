@@ -23,7 +23,7 @@
             </div>
             <div class="blocs-menu">
                 <span class="nav-menu-item">
-                    <a href="#port">Portfolio</a>
+                    <a href="#port">Mes projets</a>
                 </span>
             </div>
             <div class="blocs-menu">
